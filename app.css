@@ -7,7 +7,20 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#user-input {
+  background: #f7f7f7;
+  border: 1px solid #ff0062;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.form-control {
+  margin: 0 auto;
+  max-width: 30rem;
 }
 
 label,
@@ -23,25 +36,27 @@ label {
 
 input,
 textarea {
+  border: 1px solid #ccc;
   font: inherit;
   padding: 0.2rem 0.4rem;
   width: 100%;
-  max-width: 30rem;
-  border: 1px solid #ccc;
 }
 
 input:focus,
 textarea:focus {
-  outline: none;
   background: #fff5f9;
+  outline: none;
 }
 
 button {
-  font: inherit;
   background: #ff0062;
   border: 1px solid #ff0062;
-  cursor: pointer;
+  border-radius: 6px;
   color: white;
+  cursor: pointer;
+  display: block;
+  font: inherit;
+  margin: 0 auto;
   padding: 0.75rem 1rem;
 }
 
@@ -56,16 +71,16 @@ button:active {
 }
 
 .projects {
-  margin: 1rem;
   border: 1px solid #ff0062;
+  margin: 1rem;
 }
 
 .projects header {
-  background: #ff0062;
-  height: 3.5rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background: #ff0062;
+  display: flex;
+  height: 3.5rem;
+  justify-content: center;
 }
 
 #finished-projects {
@@ -77,8 +92,8 @@ button:active {
 }
 
 .projects h2 {
-  margin: 0;
   color: white;
+  margin: 0;
 }
 
 .projects ul {
@@ -88,10 +103,10 @@ button:active {
 }
 
 .projects li {
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
-  padding: 1rem;
-  margin: 1rem;
   background-color: white;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .projects li h2 {
@@ -118,11 +133,4 @@ button:active {
 
 #finished-projects .droppable {
   background: #d6e1ff;
-}
-
-#user-input {
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #ff0062;
-  background: #f7f7f7;
 }
