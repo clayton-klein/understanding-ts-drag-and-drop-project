@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Drag and Drop</title>
     <link rel="stylesheet" href="app.css" />
-    <script src="./dist/app.js" defer></script>
+
+    <!-- We MUST add type="module" in the script tag to work with ES6 modules, 
+      otherwise the imports/exports will not work. -->
+    <script type="module" src="./dist/app.js" defer></script>
   </head>
   <body>
     <template id="project-input">
