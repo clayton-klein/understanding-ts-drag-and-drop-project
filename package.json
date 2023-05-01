@@ -1,0 +1,29 @@
+{
+  "name": "understanding-ts-drag-and-drop-project",
+  "version": "1.0.0",
+  "description": "**Status: em andamento.**",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clayton-klein/understanding-ts-drag-and-drop-project.git"
+  },
+  "author": "Clayton Klein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clayton-klein/understanding-ts-drag-and-drop-project/issues"
+  },
+  "homepage": "https://github.com/clayton-klein/understanding-ts-drag-and-drop-project#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
+  }
+}
