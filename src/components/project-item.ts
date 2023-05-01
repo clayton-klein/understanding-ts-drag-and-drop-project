@@ -1,12 +1,14 @@
 /**
  * We MUST use/add the .js extension at the end of the name of the files
  * we're importing, because that's what it'll be in the end when TS is
- * transpiled and without it we'll get errors.
+ * transpiled and without it we'll get errors (we just removed them later
+ * because we installed webpack and then having the extensions would be a 
+ * problem).
  */ 
-import { Draggable } from "../models/drag-drop.js";
-import BaseComponent from "./base-component.js";
-import { Project } from "../models/project.js";
-import { AutoBind } from "../decorators/autobind.js";
+import { Draggable } from "../models/drag-drop";
+import BaseComponent from "./base-component";
+import { Project } from "../models/project";
+import { AutoBind } from "../decorators/autobind";
 
 export class ProjectItem
   extends BaseComponent<HTMLUListElement, HTMLLIElement>

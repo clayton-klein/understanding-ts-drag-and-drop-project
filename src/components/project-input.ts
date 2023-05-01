@@ -1,28 +1,30 @@
 /**
  * We MUST use/add the .js extension at the end of the name of the files
  * we're importing, because that's what it'll be in the end when TS is
- * transpiled and without it we'll get errors.
- */ 
+ * transpiled and without it we'll get errors (we just removed them later
+ * because we installed webpack and then having the extensions would be a 
+ * problem).
+ */
 
 /**
  * Since this is importing a "default" export, we can name it whatever we
  * want, differently from "named" exports where we need to import what we
  * need with the exact same names they were created.
  */
-import BaseComponent from "./base-component.js";
+import BaseComponent from "./base-component";
 
 /**
  * A different sintax for importing (* = all, it'll import everything that
- * is being exported from the file) and the alias "as" can be named 
+ * is being exported from the file) and the alias "as" can be named
  * whatever we want, it'll be like an object and then we can access
  * the imported items from inside of it using dot notation.
- * 
- * Aliases are also useful to rename imports and avoid name clashes. 
- */ 
-import * as Validation from "../util/validation.js";
+ *
+ * Aliases are also useful to rename imports and avoid name clashes.
+ */
+import * as Validation from "../util/validation";
 
-import { AutoBind } from "../decorators/autobind.js";
-import { projectState } from "../state/project-state.js";
+import { AutoBind } from "../decorators/autobind";
+import { projectState } from "../state/project-state";
 
 export class ProjectInput extends BaseComponent<
   HTMLDivElement,
